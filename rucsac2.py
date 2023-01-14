@@ -1,11 +1,8 @@
-Volum=int(input('volum max = '))
-n=int(input('dati nr de obiecte = '))
-volume=[]
-preturi=[]
+Volum=250
+n=5
+volume=[120,40,40,100,150]
+preturi=[150,80,60,120,180]
 x=[]
-for i in range(n):
-    volume.append(int(input('volumul obiectului = ')))
-    preturi.append(int(input('pretul obiectului = ')))
 raport=[]
 for i in range(n):
    raport.append(preturi[i]/volume[i])
@@ -32,7 +29,6 @@ def solutii():
   return print('Pretul total al obiectelor din rucsac=', pt,   'Volumul ocupat=', vt)
 solutii()
 print('In rucsac s-au introdus:')
-for i in range(1,n):
+for i in range(5):
     if x[i]>0:
-        print('- obiectul ',i,'(', vol[i]* x[i], ',',  pr[i], ')')
-#Se va considera că se poate introduce și o parte dintr-un obiect care nu încape în rucsac, până la ocuparea întregului volum al rucsacului. 
+        print('- obiectul ',i+1,'(', vol[i]* x[i], ',',  pr[i], ')')
